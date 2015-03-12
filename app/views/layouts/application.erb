@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>VeloCulture.cc</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+
+			<!-- Static navbar -->
+			<nav class="navbar navbar-default" role="navigation">
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="/">VeloCulture</a>
+			  </div>
+			  <div class="navbar-collapse collapse">
+			    <ul class="nav navbar-nav">
+			      <li><a href="/secure/place">Blogue</a></li>
+			      <li><a href="/secure/place">Produtos</a></li>
+			      <li><a href="/secure/place">Oficina</a></li>
+			      <li><a href="/secure/place">Media</a></li>
+			      <li><a href="/secure/place">Lojas / contactos</a></li>
+			    </ul>
+			    <ul class="nav navbar-nav navbar-right">
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			            <li><a href="/login/form">Login</a></li>
+			            <li class="divider"></li>
+			            <li><a href="/logout">Logout</a></li>
+			        </ul>
+			      </li>
+
+			    </ul>
+			  </div><!--/.nav-collapse -->
+			</nav>
+
+			<div>
+			      <%if @error then %>
+			          <div class="alert alert-error"><%=@error%></div>
+			      <% end %>
+			      <%= yield %>
+			</div>
+
+	</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="javascripts/vendor/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="javascripts/bootstrap.min.js"></script>
+  </body>
+</html>

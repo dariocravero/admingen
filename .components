@@ -1,0 +1,10 @@
+---
+:orm: sequel
+:test: minitest
+:mock: none
+:script: none
+:renderer: erb
+:stylesheet: none
+:namespace: VeloCulture
+:migration_format: number
+:admin_renderer: erb
